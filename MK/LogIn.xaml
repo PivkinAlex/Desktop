@@ -1,0 +1,50 @@
+﻿<Page x:Class="MK.LogIn"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MK"
+      mc:Ignorable="d" 
+      d:DesignHeight="680" d:DesignWidth="975"
+      Title="LogIn">
+    <ScrollViewer>
+
+        <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="C:\Users\alesh\OneDrive\Рабочий стол\MK\MK\Image\background.png"/>
+            </Grid.Background>
+            <Border Background="#FFAC3146" CornerRadius="12,12,2,2" Margin="250,490,249,0" Height="48" VerticalAlignment="Top" HorizontalAlignment="Center" Width="460">
+                <Button Content="Сувамс" Background="#FFAC3146" Padding="0 10 0 10" Foreground="White" FontSize="18"  BorderBrush="#FFAC3146"  Margin="8,0,10,0" FontFamily="Actor" Click="Button_Click" Height="48" VerticalAlignment="Top" />
+            </Border>
+            <Border Background="#FFAC3146" CornerRadius="2,2,12,12" Margin="250,550,249,0" Height="48" VerticalAlignment="Top" HorizontalAlignment="Center" Width="460">
+                <Button Content="Войти" Background="#FFAC3146" Padding="0 10 0 10" Foreground="White" FontSize="18"  BorderBrush="#FFAC3146"  Margin="8,0,10,0" FontFamily="Actor" Click="Button_Click_1" />
+            </Border>
+            <Label Content="Сувама васта" Margin="347,130,347,495" FontSize="32" Height="55" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBox x:Name="Login" Text="Введите логин" Foreground="Gray" FontFamily="Actor" FontSize="18" BorderThickness="0,0,0,2" Margin="250,310,249,0" Height="30" VerticalAlignment="Top" TextWrapping="Wrap" SelectionTextBrush="{x:Null}" AllowDrop="True" AutomationProperties.HelpText="Тяштьк почтать" BorderBrush="Black" ToolTip="Тяштьк почтацень" TextChanged="Login_TextChanged" GotFocus="Login_GotFocus" LostFocus="Login_LostFocus" HorizontalAlignment="Center" Width="460"  >
+                
+                <TextBox.Background>
+                    <SolidColorBrush Color="White" Opacity="0"/>
+                </TextBox.Background>
+            </TextBox>
+            <PasswordBox  x:Name="Password"
+                          FontFamily="Actor"
+                          FontSize="16"  
+                          Margin="250,410,250,0"  
+                          BorderBrush="Black"
+                          BorderThickness="0,0,0,2"
+                          Height="30" 
+                          VerticalAlignment="Top" 
+                          AutomationProperties.HelpText="Введите пароль" 
+                          SelectionTextBrush="Black"
+                          SelectionBrush="Black" HorizontalAlignment="Center" Width="460">
+                <PasswordBox.Background>
+                    <SolidColorBrush Color="White" Opacity="0"/>
+                </PasswordBox.Background>
+            </PasswordBox>
+            <Label Content="Почтась" Margin="250,250,589,0" FontSize="20" Height="35" VerticalAlignment="Top"/>
+            <Label Content="Парольсь" Height="35" Margin="250,350,593,0" VerticalAlignment="Top" FontSize="20"/>
+
+        </Grid>
+    </ScrollViewer>
+    
+</Page>
