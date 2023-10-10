@@ -11,7 +11,7 @@
 
         <Grid>
             <Grid.Background>
-                <ImageBrush ImageSource="C:\Users\alesh\OneDrive\Рабочий стол\MK\MK\Image\background.png"/>
+                <ImageBrush ImageSource="/Resources/Images/background.png"/>
             </Grid.Background>
             <Border Background="#FFAC3146" CornerRadius="12,12,2,2" Margin="250,490,249,0" Height="48" VerticalAlignment="Top" HorizontalAlignment="Center" Width="460">
                 <Button Content="Сувамс" Background="#FFAC3146" Padding="0 10 0 10" Foreground="White" FontSize="18"  BorderBrush="#FFAC3146"  Margin="8,0,10,0" FontFamily="Actor" Click="Button_Click" Height="48" VerticalAlignment="Top" />

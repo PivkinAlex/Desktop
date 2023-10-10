@@ -12,7 +12,7 @@
 
         <Grid>
             <Grid.Background>
-                <ImageBrush ImageSource="C:\Users\alesh\OneDrive\Рабочий стол\MK\MK\Image\background2.png"/>
+                <ImageBrush ImageSource="/Resources/Images/background2.png"/>
             </Grid.Background>
             <Border Background="#FFAC3146" CornerRadius="17,17,17,17" Margin="110,0,738,48" Height="38" VerticalAlignment="Bottom">
                 <Button Content="Меки" Background="#FFAC3146" Padding="0 10 0 10" Foreground="White" FontSize="20"  BorderBrush="#FFAC3146"  Margin="20,0,20,0" FontFamily="Actor" Height="46" VerticalAlignment="Center" Click="Button_Click"  />

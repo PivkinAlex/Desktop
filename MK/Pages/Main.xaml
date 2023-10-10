@@ -12,7 +12,7 @@
 
         <Grid>
             <Grid.Background>
-                <ImageBrush ImageSource="C:\Users\alesh\OneDrive\Рабочий стол\MK\MK\Image\background.png"/>
+                <ImageBrush ImageSource="/Resources/Images/background.png"/>
             </Grid.Background>
             <Border Background="#FFAC3146" CornerRadius="12,12,2,2" Margin="0,80,0,0" HorizontalAlignment="Center" Width="460" Height="48" VerticalAlignment="Top">
                 <Button Content="Сувамс" Background="#FFAC3146" Padding="0 10 0 10" Foreground="White" FontSize="18"  BorderBrush="#FFAC3146"  Margin="8,0,10,0" FontFamily="Actor" Click="Button_Click" />
@@ -20,7 +20,7 @@
             <Border Background="#FFAC3146" CornerRadius="2,2,12,12" Margin="0,0,0,82" HorizontalAlignment="Center" Width="460" Height="48" VerticalAlignment="Bottom">
                 <Button Content="Войти" Background="#FFAC3146" Padding="0 10 0 10" Foreground="White" FontSize="18"  BorderBrush="#FFAC3146"  Margin="8,0,10,0" FontFamily="Actor" Height="48" VerticalAlignment="Top"  />
             </Border>
-            <Image Margin="0,159,0,0" Source="C:\Users\alesh\OneDrive\Рабочий стол\MK\MK\Image\Saransk.png" HorizontalAlignment="Center" Height="368" VerticalAlignment="Top" 
+            <Image Margin="0,159,0,0" Source="/Resources/Images/Saransk.png" HorizontalAlignment="Center" Height="368" VerticalAlignment="Top" 
                 />
 
         </Grid>
