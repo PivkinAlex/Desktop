@@ -14,16 +14,30 @@
             <Grid.Background>
                 <ImageBrush ImageSource="/Resources/Images/background2.png"/>
             </Grid.Background>
-            <Border Background="#FFAC3146" CornerRadius="17,17,17,17" Margin="110,0,738,48" Height="38" VerticalAlignment="Bottom">
-                <Button Content="Меки" Background="#FFAC3146" Padding="0 10 0 10" Foreground="White" FontSize="20"  BorderBrush="#FFAC3146"  Margin="20,0,20,0" FontFamily="Actor" Height="46" VerticalAlignment="Center" Click="Button_Click"  />
+            <Border Background="#FFAC3146"
+                    CornerRadius="17,17,17,17" 
+                    Margin="110,0,738,48" 
+                    Height="38" 
+                    VerticalAlignment="Bottom">
+                <Button Content="Меки"
+                        Background="#FFAC3146"
+                        Padding="0 10 0 10"
+                        Foreground="White" 
+                        FontSize="20" 
+                        BorderBrush="#FFAC3146"  
+                        Margin="20,0,20,0"
+                        FontFamily="Actor" 
+                        Height="46" 
+                        VerticalAlignment="Center" 
+                        Click="Button_Click"  />
             </Border>
-            <Image HorizontalAlignment="Left" Height="180" Margin="675,40,0,0" VerticalAlignment="Top" Width="159" Source="/Chisl.png"/>
-            <Image HorizontalAlignment="Left" Height="180" Margin="479,40,0,0" VerticalAlignment="Top" Width="151" Source="/Padeg.png"/>
-            <Image HorizontalAlignment="Left" Height="189" Margin="375,0,0,0" VerticalAlignment="Center" Width="139" Source="/Koren.png"/>
-            <Image HorizontalAlignment="Left" Height="188" Margin="586,0,0,0" VerticalAlignment="Center" Width="139" Source="/Predlognie.png"/>
-            <Image HorizontalAlignment="Left" Height="188" Margin="785,0,0,0" VerticalAlignment="Center" Width="139" Source="/Time.png"/>
-            <Image HorizontalAlignment="Left" Height="186" Margin="479,461,0,0" VerticalAlignment="Top" Width="177" Source="/Pril.png"/>
-            <Image HorizontalAlignment="Left" Height="189" Margin="694,461,0,0" VerticalAlignment="Top" Width="139" Source="/Glagol.png"/>
+            <Image HorizontalAlignment="Left" Height="180" Margin="675,40,0,0" VerticalAlignment="Top" Width="159" Source="/Resources/Images/Chisl.png"/>
+            <Image HorizontalAlignment="Left" Height="180" Margin="479,40,0,0" VerticalAlignment="Top" Width="151" Source="/Resources/Images/Padeg.png"/>
+            <Image HorizontalAlignment="Left" Height="189" Margin="375,0,0,0" VerticalAlignment="Center" Width="139" Source="/Resources/Images/Koren.png"/>
+            <Image HorizontalAlignment="Left" Height="188" Margin="586,0,0,0" VerticalAlignment="Center" Width="139" Source="/Resources/Images/Predlognie.png"/>
+            <Image HorizontalAlignment="Left" Height="188" Margin="785,0,0,0" VerticalAlignment="Center" Width="139" Source="/Resources/Images/Time.png"/>
+            <Image HorizontalAlignment="Left" Height="186" Margin="479,461,0,0" VerticalAlignment="Top" Width="177" Source="/Resources/Images/Pril.png"/>
+            <Image HorizontalAlignment="Left" Height="189" Margin="694,461,0,0" VerticalAlignment="Top" Width="139" Source="/Resources/Images/Glagol.png"/>
 
         </Grid>
     </ScrollViewer>
