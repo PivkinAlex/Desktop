@@ -32,12 +32,19 @@
                         Click="Button_Click"  />
             </Border>
             <Image HorizontalAlignment="Left" Height="180" Margin="675,40,0,0" VerticalAlignment="Top" Width="159" Source="/Resources/Images/Chisl.png"/>
-            <Image HorizontalAlignment="Left" Height="180" Margin="479,40,0,0" VerticalAlignment="Top" Width="151" Source="/Resources/Images/Padeg.png"/>
             <Image HorizontalAlignment="Left" Height="189" Margin="375,0,0,0" VerticalAlignment="Center" Width="139" Source="/Resources/Images/Koren.png"/>
             <Image HorizontalAlignment="Left" Height="188" Margin="586,0,0,0" VerticalAlignment="Center" Width="139" Source="/Resources/Images/Predlognie.png"/>
             <Image HorizontalAlignment="Left" Height="188" Margin="785,0,0,0" VerticalAlignment="Center" Width="139" Source="/Resources/Images/Time.png"/>
             <Image HorizontalAlignment="Left" Height="186" Margin="479,461,0,0" VerticalAlignment="Top" Width="177" Source="/Resources/Images/Pril.png"/>
             <Image HorizontalAlignment="Left" Height="189" Margin="694,461,0,0" VerticalAlignment="Top" Width="139" Source="/Resources/Images/Glagol.png"/>
+            <Button x:Name="PadezhiTheme" HorizontalAlignment="Left" Margin="460,40,0,0" VerticalAlignment="Top" Height="180" Width="135" Click="PadezhiTheme_Click">
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="#FFD6D6D6" Opacity="0"/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/Images/Padezhi.png"/>
+                </Button.Background>
+            </Button>
 
         </Grid>
     </ScrollViewer>

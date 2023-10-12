@@ -95,8 +95,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Themes\Padezhi\Padezhi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Themes\Padezhi\PadezhiHelp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\Themes\Padezhi\Padezhi.xaml.cs">
+      <DependentUpon>Padezhi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Themes\Padezhi\PadezhiHelp.xaml.cs">
+      <DependentUpon>PadezhiHelp.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -128,11 +142,15 @@
     <Resource Include="Resources\Images\Chisl.png" />
     <Resource Include="Resources\Images\Glagol.png" />
     <Resource Include="Resources\Images\Koren.png" />
-    <Resource Include="Resources\Images\Padeg.png" />
+    <Resource Include="Resources\Images\Padezhi.png" />
     <Resource Include="Resources\Images\Predlognie.png" />
     <Resource Include="Resources\Images\Pril.png" />
     <Resource Include="Resources\Images\Saransk.png" />
     <Resource Include="Resources\Images\Time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\!.png" />
+    <Resource Include="Resources\Images\Help.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

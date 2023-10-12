@@ -1,5 +1,4 @@
-﻿using MK.Pages.Themes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,26 +13,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MK
+namespace MK.Pages.Themes
 {
     /// <summary>
-    /// Логика взаимодействия для Themes.xaml
+    /// Логика взаимодействия для Padezhi.xaml
     /// </summary>
-    public partial class Themes : Page
+    public partial class Padezhi : Page
     {
-        public Themes()
+        public Padezhi()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void HelpPadezhiButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new LogIn());
-        }
 
-        private void PadezhiTheme_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Padezhi());
         }
     }
 }
