@@ -13,57 +13,23 @@
             <Grid.Background>
                 <ImageBrush ImageSource="/Resources/Images/background.png"/>
             </Grid.Background>
-            <Border Background="#FFAC3146"
-                    CornerRadius="12,12,2,2" 
-                    Margin="250,490,249,0"
-                    Height="48" 
-                    VerticalAlignment="Top" 
-                    HorizontalAlignment="Center" 
-                    Width="460">
-                <Button Content="Сувамс" 
-                        Background="#FFAC3146" 
-                        Padding="0 10 0 10" 
-                        Foreground="White"
-                        FontSize="18" 
-                        BorderBrush="#FFAC3146" 
-                        Margin="8,0,10,0" 
-                        FontFamily="Actor" 
-                        Click="Button_Click"
-                        Height="48" 
-                        VerticalAlignment="Top" />
-            </Border>
-            <Border Background="#FFAC3146" 
-                    CornerRadius="2,2,12,12" 
-                    Margin="250,550,249,0" 
-                    Height="48" 
-                    VerticalAlignment="Top" 
-                    HorizontalAlignment="Center"
-                    Width="460">
-                <Button Content="Войти" 
-                        Background="#FFAC3146"
-                        Padding="0 10 0 10" 
-                        Foreground="White" 
-                        FontSize="18"  
-                        BorderBrush="#FFAC3146" 
-                        Margin="8,0,10,0"
-                        FontFamily="Actor" 
-                        Click="Button_Click_1" />
-            </Border>
-            <Label Content="Сувама васта" 
-                   Margin="347,130,347,495" 
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Label Content="Сувама васта" 
                    FontSize="32"
-                   Height="55"
-                   HorizontalContentAlignment="Center" 
-                   HorizontalAlignment="Center"/>
-            <TextBox x:Name="Login" 
+                   Height="195"
+                   HorizontalContentAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" 
+                   />
+                <Label Content="Почтась"
+                   FontSize="20"
+                   Height="35" 
+                   Width="119" HorizontalAlignment="Left"/>
+                <TextBox x:Name="Login" 
                      Text="Введите логин" 
                      Foreground="Gray" 
                      FontFamily="Actor" 
                      FontSize="18" 
-                     BorderThickness="0,0,0,2"
-                     Margin="250,310,249,0" 
+                     BorderThickness="0,0,0,2" 
                      Height="30" 
-                     VerticalAlignment="Top" 
                      TextWrapping="Wrap" 
                      SelectionTextBrush="{x:Null}" 
                      AllowDrop="True" 
@@ -73,44 +39,65 @@
                      TextChanged="Login_TextChanged" 
                      GotFocus="Login_GotFocus" 
                      LostFocus="Login_LostFocus" 
-                     HorizontalAlignment="Center" 
                      Width="460"  >
-                
-                <TextBox.Background>
-                    <SolidColorBrush Color="White" 
+
+                    <TextBox.Background>
+                        <SolidColorBrush Color="White" 
                                      Opacity="0"/>
-                </TextBox.Background>
-            </TextBox>
-            <PasswordBox  x:Name="Password"
+                    </TextBox.Background>
+                </TextBox>
+                <Label Content="Парольсь" 
+                   Height="35"
+                   FontSize="20" Width="115" VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
+                <PasswordBox  x:Name="Password"
                           FontFamily="Actor"
                           FontSize="16"  
-                          Margin="250,410,250,0"  
                           BorderBrush="Black"
                           BorderThickness="0,0,0,2"
                           Height="30" 
-                          VerticalAlignment="Top" 
                           AutomationProperties.HelpText="Введите пароль" 
                           SelectionTextBrush="Black"
-                          SelectionBrush="Black" 
-                          HorizontalAlignment="Center"
+                          SelectionBrush="Black"
                           Width="460">
-                <PasswordBox.Background>
-                    <SolidColorBrush Color="White" 
+                    <PasswordBox.Background>
+                        <SolidColorBrush Color="White" 
                                      Opacity="0"/>
-                </PasswordBox.Background>
-            </PasswordBox>
-            <Label Content="Почтась" 
-                   Margin="250,250,589,0"
-                   FontSize="20"
-                   Height="35" 
-                   VerticalAlignment="Top"/>
-            <Label Content="Парольсь" 
-                   Height="35"
-                   Margin="250,350,593,0"
-                   VerticalAlignment="Top"
-                   FontSize="20"/>
+                    </PasswordBox.Background>
+                </PasswordBox>
+                <StackPanel Height="45" Width="465"/>
+                <Border Background="#FFAC3146"
+                    CornerRadius="12,12,2,2"
+                    Height="48" 
+                    Width="460">
+                    <Button Content="Сувамс" 
+                        Background="#FFAC3146" 
+                        Padding="0 10 0 10" 
+                        Foreground="White"
+                        FontSize="18" 
+                        BorderBrush="#FFAC3146" 
+                        FontFamily="Actor" 
+                        Click="Button_Click"
+                        Height="48"
+                        Width="440"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Center"/>
+                </Border>
+                <StackPanel Height="22" Width="465"/>
+                <Border Background="#FFAC3146" 
+                    CornerRadius="2,2,12,12" VerticalAlignment="Center" HorizontalAlignment="Center" Width="460">
+                    <Button Content="Войти" 
+                        Background="#FFAC3146"
+                        Padding="0 10 0 10" 
+                        Foreground="White" 
+                        FontSize="18"  
+                        BorderBrush="#FFAC3146" 
+                        Margin="8,0,10,0"
+                        FontFamily="Actor" 
+                        Click="Button_Click_1" />
+                </Border>
+            </StackPanel>
 
         </Grid>
     </ScrollViewer>
-    
+
 </Page>

@@ -1,0 +1,47 @@
+﻿<Window x:Class="MK.Windows.PadezhiHelp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MK.Windows"
+        mc:Ignorable="d"
+        Title="Лездкс" Height="450" Width="570" Icon="/Resources/Images/icon.jpg">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="PadezhiTables" Orientation="Horizontal" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <StackPanel x:Name="PadezhiColumn" Height="338" VerticalAlignment="Top" HorizontalAlignment="Left">
+                <Label Content="Название падежа" FontWeight="Bold"/>
+                <Label Content="Именительный"/>
+                <Label Content="Родительный"/>
+                <Label Content="Дательный"/>
+                <Label Content="Отложительный"/>
+                <Label Content="Местный"/>
+                <Label Content="Исходный"/>
+                <Label Content="Направительно-вносительный"/>
+                <Label Content="Переместительный"/>
+                <Label Content="Сравнительный"/>
+                <Label Content="Изъяснительный"/>
+                <Label Content="Превратительный"/>
+                <Label Content="Причинный"/>
+            </StackPanel>
+            <StackPanel Height="338" VerticalAlignment="Top" Width="283">
+                <Label Content="Вопросы" FontWeight="Bold"/>
+                <Label Content="Кие? Мезе?/Кто? Что?" HorizontalAlignment="Left" FontStyle="Italic"/>
+                <Label Content="Кинь? Мезень?/Кого? Чего?" HorizontalAlignment="Left" FontStyle="Italic"/>
+                <Label Content="Киньди? Мезенди?/Кому? Чему?" HorizontalAlignment="Left" FontStyle="Italic"/>
+                <Label Content="Кида? Мезьда?/Ког? Чего" HorizontalAlignment="Left" FontStyle="Italic"/>
+                <Label Content="Киса? Мезьса?/В ком? В чем?" HorizontalAlignment="Left" FontStyle="Italic"/>
+                <Label Content="Киста? Мезьста?/Из кого? Из чего?" HorizontalAlignment="Left" Width="261" FontStyle="Italic"/>
+                <Label Content="Кис? Мезьс?/В кого? Во что?" HorizontalAlignment="Left" FontStyle="Italic"/>
+                <Label Content="Кига? Мезьге?/По кому? По чему?" HorizontalAlignment="Left" FontStyle="Italic"/>
+                <Label Content="Кишка? Мезьшка?/По кому? По чему?" HorizontalAlignment="Left" FontStyle="Italic"/>
+                <Label Content="Кифтофтома? Мезьфтома?/Без кого? Без чего?" HorizontalAlignment="Left" FontStyle="Italic"/>
+                <Label Content="Кикс? Мезьгс?/В кого? В чего?" HorizontalAlignment="Left" FontStyle="Italic"/>
+                <Label Content="Кинкса? Мезенкса?/За кем? За чем?" HorizontalAlignment="Left" FontStyle="Italic"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>

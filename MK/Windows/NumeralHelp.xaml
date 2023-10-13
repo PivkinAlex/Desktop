@@ -1,0 +1,84 @@
+﻿<Window x:Class="MK.Windows.NumeralHelp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MK.Windows"
+        mc:Ignorable="d"
+        Title="NumeralHelp" Height="595" Width="280" Icon="/Resources/Images/icon.jpg">
+    <Grid>
+        <ScrollViewer>
+            <StackPanel x:Name="NumeralTables" Orientation="Horizontal" Margin="0,10,0,0" Height="834" Width="180">
+                <StackPanel x:Name="NumeralColumn" Height="827" VerticalAlignment="Top">
+                    <Label Content="Числительное" FontWeight="Bold"/>
+                    <Label Content="Один" FontStyle="Italic"/>
+                    <Label Content="Два" FontStyle="Italic"/>
+                    <Label Content="Три" FontStyle="Italic"/>
+                    <Label Content="Четыре" FontStyle="Italic"/>
+                    <Label Content="Пять" FontStyle="Italic"/>
+                    <Label Content="Шесть" FontStyle="Italic"/>
+                    <Label Content="Семь" FontStyle="Italic"/>
+                    <Label Content="Восемь" FontStyle="Italic"/>
+                    <Label Content="Девять" FontStyle="Italic"/>
+                    <Label Content="Десять" FontStyle="Italic"/>
+                    <Label Content="Одиннадцать" FontStyle="Italic"/>
+                    <Label Content="Двенадцать" FontStyle="Italic"/>
+                    <Label Content="Тринадцать" FontStyle="Italic"/>
+                    <Label Content="Четырнадцать" FontStyle="Italic"/>
+                    <Label Content="Пятьнадцать" FontStyle="Italic"/>
+                    <Label Content="Шестнадцать" FontStyle="Italic"/>
+                    <Label Content="Семьнадцать" FontStyle="Italic"/>
+                    <Label Content="Восемьнадцать" FontStyle="Italic"/>
+                    <Label Content="Девятнадцать" FontStyle="Italic"/>
+                    <Label Content="Двадцать" FontStyle="Italic"/>
+                    <Label Content="Тридцать" FontStyle="Italic"/>
+                    <Label Content="Сорок" FontStyle="Italic"/>
+                    <Label Content="Пятьдесят" FontStyle="Italic"/>
+                    <Label Content="Шестьдесят" FontStyle="Italic"/>
+                    <Label Content="Семьдесять" FontStyle="Italic"/>
+                    <Label Content="Восемьдесять" FontStyle="Italic"/>
+                    <Label Content="Девяносто" FontStyle="Italic"/>
+                    <Label Content="Сто" FontStyle="Italic"/>
+                    <Label Content="Двести" FontStyle="Italic"/>
+                    <Label Content="Тысяча" FontStyle="Italic"/>
+                    <Label Content="Миллион" FontStyle="Italic"/>
+
+                </StackPanel>
+                <StackPanel x:Name="NumeralColumn2" Height="836" VerticalAlignment="Top" Width="283">
+                    <Label Content="Перевод" FontWeight="Bold"/>
+                    <Label Content="Фкя" HorizontalAlignment="Left" FontStyle="Italic"/>
+                    <Label Content="Кафта" HorizontalAlignment="Left" FontStyle="Italic"/>
+                    <Label Content="Колма" HorizontalAlignment="Left" FontStyle="Italic"/>
+                    <Label Content="Ниле" HorizontalAlignment="Left" FontStyle="Italic"/>
+                    <Label Content="Вете" HorizontalAlignment="Left" FontStyle="Italic"/>
+                    <Label Content="Кота" HorizontalAlignment="Left" Width="261" FontStyle="Italic"/>
+                    <Label Content="Сисем" HorizontalAlignment="Left" FontStyle="Italic"/>
+                    <Label Content="Кафкса" HorizontalAlignment="Left" FontStyle="Italic"/>
+                    <Label Content="Вейхса" HorizontalAlignment="Left" FontStyle="Italic"/>
+                    <Label Content="Кемонь" HorizontalAlignment="Left" FontStyle="Italic"/>
+                    <Label Content="Кефкие" HorizontalAlignment="Left" FontStyle="Italic"/>
+                    <Label Content="Кемгафтува" HorizontalAlignment="Left" FontStyle="Italic"/>
+                    <Label Content="Кемголмува" FontStyle="Italic"/>
+                    <Label Content="Кемнилие" FontStyle="Italic"/>
+                    <Label Content="Кеветие" FontStyle="Italic"/>
+                    <Label Content="Кемготува" FontStyle="Italic"/>
+                    <Label Content="Кемзисемце" FontStyle="Italic"/>
+                    <Label Content="Кемгафксува" FontStyle="Italic"/>
+                    <Label Content="Кевейхсые" FontStyle="Italic"/>
+                    <Label Content="Комсь" FontStyle="Italic"/>
+                    <Label Content="Колмогемонь" FontStyle="Italic"/>
+                    <Label Content="Нильгемонь" FontStyle="Italic"/>
+                    <Label Content="Ведьгемонь" FontStyle="Italic"/>
+                    <Label Content="Кодгемонь" FontStyle="Italic"/>
+                    <Label Content="Сизьгемонь" FontStyle="Italic"/>
+                    <Label Content="Кафксогемонь" FontStyle="Italic"/>
+                    <Label Content="Вейхсогемонь" FontStyle="Italic"/>
+                    <Label Content="Сяда" FontStyle="Italic"/>
+                    <Label Content="Кафта сядт" FontStyle="Italic"/>
+                    <Label Content="Тёжень" FontStyle="Italic"/>
+                    <Label Content="Миллион" FontStyle="Italic"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

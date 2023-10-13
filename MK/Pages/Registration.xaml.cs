@@ -37,7 +37,7 @@ namespace MK
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Themes());
+            NavigationService.Navigate(new ThemesPage());
         }
     }
 }

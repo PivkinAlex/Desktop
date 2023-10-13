@@ -1,4 +1,7 @@
-﻿using System;
+﻿using static MK.Pages.Themes.Padezhi;
+using MK.Pages;
+using MK.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Controls.Primitives;
 
 namespace MK.Pages.Themes
 {
@@ -25,9 +29,17 @@ namespace MK.Pages.Themes
             InitializeComponent();
         }
 
+       
+
         private void HelpPadezhiButton_Click(object sender, RoutedEventArgs e)
         {
+            var wind = new PadezhiHelp();
+            wind.Show();
+        }
 
+        private void ExitPadezhiButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ThemesPage());
         }
     }
 }

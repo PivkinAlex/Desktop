@@ -1,4 +1,4 @@
-﻿using MK.Pages.Themes;
+﻿using MK.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,26 +14,27 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MK
+namespace MK.Pages.Theme
 {
     /// <summary>
-    /// Логика взаимодействия для Themes.xaml
+    /// Логика взаимодействия для Prilagatel.xaml
     /// </summary>
-    public partial class Themes : Page
+    public partial class Prilagatel : Page
     {
-        public Themes()
+        public Prilagatel()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void HelpPrilagatelButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new LogIn());
+            var wind = new PrilagatelHelp();
+            wind.Show();
         }
 
-        private void PadezhiTheme_Click(object sender, RoutedEventArgs e)
+        private void ExitPrilagatelButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Padezhi());
+            NavigationService.Navigate(new ThemesPage());
         }
     }
 }

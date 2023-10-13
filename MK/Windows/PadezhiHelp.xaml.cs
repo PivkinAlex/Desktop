@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace MK.Pages.Themes.Padezhi
+namespace MK.Windows
 {
     /// <summary>
     /// Логика взаимодействия для PadezhiHelp.xaml
