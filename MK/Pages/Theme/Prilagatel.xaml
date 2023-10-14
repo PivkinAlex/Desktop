@@ -67,14 +67,14 @@
             </StackPanel>
             <StackPanel Height="333" VerticalAlignment="Top">
                 <Label Content="Прилагательное" FontWeight="Bold"/>
-                <TextBox TextWrapping="Wrap"  Width="63" Margin="1,4,0,4"/>
-                <TextBox TextWrapping="Wrap"  Width="63" Margin="1,4,0,4"/>
-                <TextBox TextWrapping="Wrap"  Width="63" Margin="1,4,0,4"/>
-                <TextBox TextWrapping="Wrap" Width="63" Margin="1,4,0,4"/>
-                <TextBox TextWrapping="Wrap" Width="63" Margin="1,4,0,4"/>
-                <TextBox TextWrapping="Wrap" Width="63" Margin="1,4,0,4"/>
-                <TextBox TextWrapping="Wrap" Width="63" Margin="1,4,0,4"/>
-                <TextBox TextWrapping="Wrap" Width="63" Margin="1,4,0,4"/>
+                <TextBox x:Name="TextBox1" TextWrapping="Wrap"  Width="63" Margin="1,4,0,4"/>
+                <TextBox x:Name="TextBox2" TextWrapping="Wrap"  Width="63" Margin="1,4,0,4"/>
+                <TextBox x:Name="TextBox3" TextWrapping="Wrap"  Width="63" Margin="1,4,0,4"/>
+                <TextBox x:Name="TextBox4" TextWrapping="Wrap" Width="63" Margin="1,4,0,4"/>
+                <TextBox x:Name="TextBox5" TextWrapping="Wrap" Width="63" Margin="1,4,0,4"/>
+                <TextBox x:Name="TextBox6" TextWrapping="Wrap" Width="63" Margin="1,4,0,4"/>
+                <TextBox x:Name="TextBox7" TextWrapping="Wrap" Width="63" Margin="1,4,0,4"/>
+                <TextBox x:Name="TextBox8" TextWrapping="Wrap" Width="63" Margin="1,4,0,4"/>
 
             </StackPanel>
             <StackPanel Height="338">
@@ -89,6 +89,23 @@
                 <Label Content="Сосновый" HorizontalAlignment="Left"/>
             </StackPanel>
         </StackPanel>
+        <Border Background="#FFAC3146"
+            CornerRadius="10,10,10,10" 
+            Margin="790,615,0,0"
+            Height="30" 
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" 
+            Width="130">
+            <Button x:Name="StopPrilagatelButton" Content="Аделамс" 
+                Background="#FFAC3146" 
+                Padding="0 10 0 10" 
+                Foreground="White"
+                FontSize="18" 
+                BorderBrush="#FFAC3146" 
+                FontFamily="Actor" 
+                Height="48" 
+                VerticalAlignment="Center" HorizontalAlignment="Center" Width="112" Click="StopPadezhiButton_Click" />
+        </Border>
 
     </Grid>
 </Page>

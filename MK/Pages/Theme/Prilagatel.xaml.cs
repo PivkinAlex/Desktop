@@ -36,5 +36,35 @@ namespace MK.Pages.Theme
         {
             NavigationService.Navigate(new ThemesPage());
         }
+        private void StopPadezhiButton_Click(object sender, RoutedEventArgs e)
+        {
+            int n = 0;
+            var textBoxes = new List<TextBox> { TextBox1, TextBox2, TextBox3, TextBox4, TextBox5, TextBox6, TextBox7, TextBox8 };
+            var textBoxesRes = new List<String> { "Кудонь", "Вирень", "Ляень", "Шабань", "Катонь", "Тишень", "Траксонь", "Пичень" };
+            for (int i = 0; i < textBoxes.Count; i++)
+            {
+                TextBox textBox = textBoxes[i];
+                string text = textBoxesRes[i];
+                textBox.IsEnabled = false;
+
+                if (textBox.Text == text)
+                {
+                    n++;
+                    Brush newBrush = new SolidColorBrush(Colors.Green);
+                    textBox.Foreground = newBrush;
+                }
+                else
+                {
+                    Brush newBrush = new SolidColorBrush(Colors.Red);
+                    textBox.Foreground = newBrush;
+                }
+
+            }
+            double RES = Math.Round(((n * 100.0) / 8.0), 2);
+            var wind = new Result(RES);
+            wind.Show();
+        }
     }
 }
+
+    
