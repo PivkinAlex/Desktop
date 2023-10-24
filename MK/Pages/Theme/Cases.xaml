@@ -1,0 +1,113 @@
+﻿<Page x:Class="MK.Pages.Theme.Cases"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MK.Pages.Theme"
+      mc:Ignorable="d" 
+      d:DesignHeight="680" d:DesignWidth="975"
+      Title="Сases">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resources/Images/background2.png"/>
+        </Grid.Background>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="630" Width="885">
+            <Border Background="#FFAC3146"
+            CornerRadius="10,10,10,10"
+            Height="30" 
+            Width="130" HorizontalAlignment="Left">
+                <Button x:Name="ExitCasesButton" Content="Лисемс" 
+                Background="#FFAC3146" 
+                Padding="0 10 0 10" 
+                Foreground="White"
+                FontSize="18" 
+                BorderBrush="#FFAC3146" 
+                FontFamily="Actor" 
+                Height="48" 
+                VerticalAlignment="Center" HorizontalAlignment="Center" Width="112" Click="ExitCasesButton_Click"  />
+            </Border>
+            <StackPanel Height="100" Orientation="Horizontal">
+                <Border Background="#FFAC3146" CornerRadius="9,9,9,9" Height="48">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/Images/!.png" Height="45" Width="45">
+                            <Image.OpacityMask>
+                                <ImageBrush ImageSource="/Resources/Images/!.png" Opacity="0.3"/>
+                            </Image.OpacityMask>
+                        </Image>
+                        <TextBlock TextWrapping="Wrap" Width="785"  
+                           Padding="10" Foreground="White" FontSize="18" VerticalAlignment="Center"><Run Language="ru-ru" Text="В данном задании вам будет необходимо среди однокоренных слов найти лишнее и отметить его."/></TextBlock>
+                    </StackPanel>
+                </Border>
+                <Button x:Name="HelpCasesButton" Height="68" Width="55" Click="HelpCasesButton_Click" HorizontalAlignment="Right"  >
+
+
+                    <Button.Foreground>
+                        <ImageBrush/>
+                    </Button.Foreground>
+                    <Button.BorderBrush>
+                        <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                    </Button.BorderBrush>
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Resources/Images/Help.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+            <StackPanel Height="100" Width="100"/>
+            <StackPanel Width="975">
+                <StackPanel Height="30" Orientation="Horizontal">
+                    <RadioButton x:Name="CasesKey1" Content="Морга" Width="185"/>
+                    <RadioButton x:Name="CasesKey2" Content="Мор" Width="185"/>
+                    <RadioButton x:Name="CasesKey3" Content="Морня" Width="185"/>
+                    <RadioButton x:Name="CasesKey4" Content="Морак" Width="185"/>
+                    <RadioButton x:Name="CasesKey5" Content="Морамс"/>
+                </StackPanel>
+                <StackPanel Height="30" Orientation="Horizontal">
+                    <RadioButton x:Name="CasesKey6" Content="Келуня" Width="185"/>
+                    <RadioButton x:Name="CasesKey7" Content="Келу" Width="185"/>
+                    <RadioButton x:Name="CasesKey8" Content="Келазь" Width="185"/>
+                    <RadioButton x:Name="CasesKey9" Content="Келунь" Width="185"/>
+                    <RadioButton x:Name="CasesKey10" Content="Келунят"/>
+                </StackPanel>
+                <StackPanel Height="30" Orientation="Horizontal">
+                    <RadioButton x:Name="CasesKey11" Content="Пиземс" Width="185"/>
+                    <RadioButton x:Name="CasesKey12" Content="Пизем" Width="185"/>
+                    <RadioButton x:Name="CasesKey13" Content="Пиза" Width="185"/>
+                    <RadioButton x:Name="CasesKey14" Content="Пизепт" Width="185"/>
+                    <RadioButton x:Name="CasesKey15" Content="Пизему"/>
+                </StackPanel>
+                <StackPanel Height="30" Orientation="Horizontal">
+                    <RadioButton x:Name="CasesKey16" Content="Шабра" Width="185" />
+                    <RadioButton x:Name="CasesKey17" Content="Шаба" Width="185"/>
+                    <RadioButton x:Name="CasesKey18" Content="Шабат" Width="185"/>
+                    <RadioButton x:Name="CasesKey19" Content="Шабань" Width="185"/>
+                    <RadioButton x:Name="CasesKey20" Content="Шабакс"/>
+                </StackPanel>
+                <StackPanel Height="20" Orientation="Horizontal">
+                    <RadioButton x:Name="CasesKey21" Content="Пинень" Width="185" />
+                    <RadioButton x:Name="CasesKey22" Content="Пине" Width="185"/>
+                    <RadioButton x:Name="CasesKey23" Content="Пинелефкс" Width="185"/>
+                    <RadioButton x:Name="CasesKey24" Content="Пинет" Width="185"/>
+                    <RadioButton x:Name="CasesKey25" Content="Пинем"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Height="100"/>
+            <Border Background="#FFAC3146"
+            CornerRadius="10,10,10,10"
+            Height="30" Width="130" HorizontalAlignment="Right">
+                <Button x:Name="StopCasesButton" Content="Аделамс" 
+                Background="#FFAC3146" 
+                Padding="0 10 0 10" 
+                Foreground="White"
+                FontSize="18" 
+                BorderBrush="#FFAC3146" 
+                FontFamily="Actor" 
+                Height="48" 
+                VerticalAlignment="Center" HorizontalAlignment="Center" Width="112" Click="StopCasesButton_Click" />
+            </Border>
+        </StackPanel>
+
+
+    </Grid>
+</Page>
+

@@ -34,7 +34,6 @@
                         VerticalAlignment="Center" 
                         Click="Button_Click"  />
             </Border>
-            <Image HorizontalAlignment="Left" Height="188" Margin="375,0,0,0" VerticalAlignment="Center" Width="139" Source="/Resources/Images/Koren.png"/>
             <Image HorizontalAlignment="Left" Height="188" Margin="586,0,0,0" VerticalAlignment="Center" Width="139" Source="/Resources/Images/Predlognie.png"/>
             <Image HorizontalAlignment="Left" Height="188" Margin="785,0,0,0" VerticalAlignment="Center" Width="139" Source="/Resources/Images/Time.png"/>
             <Image HorizontalAlignment="Left" Height="189" Margin="694,461,0,0" VerticalAlignment="Top" Width="139" Source="/Resources/Images/Glagol.png"/>
@@ -60,6 +59,14 @@
                 </Button.BorderBrush>
                 <Button.Background>
                     <ImageBrush ImageSource="/Resources/Images/Chisl.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="CasesThemesImage" Content="" HorizontalAlignment="Left" Margin="385,0,0,0" VerticalAlignment="Center" Height="186" Width="143" Click="CasesThemesImage_Click">
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="White" Opacity="0"/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/Images/Koren.png"/>
                 </Button.Background>
             </Button>
 

@@ -70,6 +70,12 @@
     <Compile Include="Pages\Theme\Prilagatel.xaml.cs">
       <DependentUpon>Prilagatel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Theme\Cases.xaml.cs">
+      <DependentUpon>Cases.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\CasesHelp.xaml.cs">
+      <DependentUpon>CasesHelp.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\NumeralHelp.xaml.cs">
       <DependentUpon>NumeralHelp.xaml</DependentUpon>
     </Compile>
@@ -122,6 +128,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Theme\Prilagatel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Theme\Cases.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\CasesHelp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -189,6 +203,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Images\icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\CasesHelpImage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

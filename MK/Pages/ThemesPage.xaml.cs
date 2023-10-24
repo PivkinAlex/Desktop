@@ -46,5 +46,10 @@ namespace MK
         {
             NavigationService.Navigate(new Numeral());
         }
+
+        private void CasesThemesImage_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Cases());
+        }
     }
 }
