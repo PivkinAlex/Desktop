@@ -12,38 +12,12 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Resources/Images/background2.png"/>
         </Grid.Background>
-        <Border Background="#FFAC3146" CornerRadius="9,9,9,9" Margin="35,72,0,0" Height="48" VerticalAlignment="Top" HorizontalAlignment="Left">
-            <StackPanel Orientation="Horizontal">
-                <Image Source="/Resources/Images/!.png" Height="45" Width="45">
-                    <Image.OpacityMask>
-                        <ImageBrush ImageSource="/Resources/Images/!.png" Opacity="0.3"/>
-                    </Image.OpacityMask>
-                </Image>
-                <TextBlock TextWrapping="Wrap" Width="785"  
-                           Padding="10" Foreground="White" FontSize="18" VerticalAlignment="Center"><Run Language="ru-ru" Text="В данном задании вам будет необходимо решить словеснозаписанные примеры, и записать численный ответ."/></TextBlock>
-            </StackPanel>
-        </Border>
-        <Button x:Name="HelpNumeralButton" VerticalAlignment="Top" Height="68" Width="55" Margin="910,62,0,0" Click="HelpNumeralButton_Click" HorizontalAlignment="Right"  >
-
-
-            <Button.Foreground>
-                <ImageBrush/>
-            </Button.Foreground>
-            <Button.BorderBrush>
-                <SolidColorBrush Color="#FF707070" Opacity="0"/>
-            </Button.BorderBrush>
-            <Button.Background>
-                <ImageBrush ImageSource="/Resources/Images/Help.png"/>
-            </Button.Background>
-        </Button>
-        <Border Background="#FFAC3146"
-            CornerRadius="10,10,10,10" 
-            Margin="35,19,0,0"
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="630" Width="885">
+            <Border Background="#FFAC3146"
+            CornerRadius="10,10,10,10"
             Height="30" 
-            VerticalAlignment="Top" 
-            HorizontalAlignment="Left" 
-            Width="130">
-            <Button x:Name="ExitNumeralButton" Content="Лисемс" 
+            Width="130" HorizontalAlignment="Left">
+                <Button x:Name="ExitNumeralButton" Content="Лисемс" 
                 Background="#FFAC3146" 
                 Padding="0 10 0 10" 
                 Foreground="White"
@@ -52,15 +26,79 @@
                 FontFamily="Actor" 
                 Height="48" 
                 VerticalAlignment="Center" HorizontalAlignment="Center" Width="112" Click="ExitNumeralButton_Click"  />
-        </Border>
-        <Border Background="#FFAC3146"
-            CornerRadius="10,10,10,10" 
-            Margin="790,615,0,0"
-            Height="30" 
-            VerticalAlignment="Top" 
-            HorizontalAlignment="Left" 
-            Width="130">
-            <Button x:Name="StopNumeralButton" Content="Аделамс" 
+            </Border>
+            <StackPanel Height="89" Width="955" Orientation="Horizontal">
+                <Border Background="#FFAC3146" CornerRadius="9,9,9,9" Height="48" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/Images/!.png" Height="45" Width="45">
+                            <Image.OpacityMask>
+                                <ImageBrush ImageSource="/Resources/Images/!.png" Opacity="0.3"/>
+                            </Image.OpacityMask>
+                        </Image>
+                        <TextBlock TextWrapping="Wrap" Width="785"  
+                           Padding="10" Foreground="White" FontSize="18" VerticalAlignment="Center"><Run Language="ru-ru" Text="В данном задании вам будет необходимо решить словеснозаписанные примеры, и записать численный ответ."/></TextBlock>
+                    </StackPanel>
+                </Border>
+                <Button x:Name="HelpNumeralButton" Height="68" Width="55" Click="HelpNumeralButton_Click"  >
+
+
+                    <Button.Foreground>
+                        <ImageBrush/>
+                    </Button.Foreground>
+                    <Button.BorderBrush>
+                        <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                    </Button.BorderBrush>
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Resources/Images/Help.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+            <StackPanel Height="425" Width="435" HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal" Height="40">
+                    <Label Content="Кафта + Колма сядт нильгемонь  фкя =" Height="30" Width="305" HorizontalContentAlignment="Right" FontSize="16"/>
+                    <TextBox x:Name="TextBox1" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="40">
+                    <Label Content="Сисем * Ведьгемонь =" Height="30" Width="305" HorizontalContentAlignment="Right" FontSize="16"/>
+                    <TextBox x:Name="TextBox2" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="40">
+                    <Label Content="Кемонь - Вете =" Height="30" Width="305" HorizontalContentAlignment="Right" FontSize="16"/>
+                    <TextBox x:Name="TextBox3" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="40">
+                    <Label Content="Сяда / Вете = " Height="30" Width="305" HorizontalContentAlignment="Right" FontSize="16"/>
+                    <TextBox x:Name="TextBox4" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="40">
+                    <Label Content="Сизьгемонь кафта / Вейхса = " Height="30" Width="305" HorizontalContentAlignment="Right" FontSize="16"/>
+                    <TextBox x:Name="TextBox5" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="40">
+                    <Label Content="Кафксагемонь ниле + Кота =" Height="30" Width="305" HorizontalContentAlignment="Right" FontSize="16"/>
+                    <TextBox x:Name="TextBox6" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="36">
+                    <Label Content="Ниле сядт кодгемонь вете + Колмагемонь сисем" Height="30" Width="305" HorizontalContentAlignment="Right" FontSize="16"/>
+                    <TextBox x:Name="TextBox7" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="40">
+                    <Label Content="Вейхсагемонь кафта + Сяда нильгемонь  фкя =" Height="30" Width="305" HorizontalContentAlignment="Right" FontSize="16"/>
+                    <TextBox x:Name="TextBox8" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="40">
+                    <Label Content="Тёжень * Кафта =" Height="30" Width="305" HorizontalContentAlignment="Right" FontSize="16"/>
+                    <TextBox x:Name="TextBox9" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="40">
+                    <Label Content="Тёжень / Кафта =" Height="30" Width="305" HorizontalContentAlignment="Right" FontSize="16"/>
+                    <TextBox x:Name="TextBox10" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
+                </StackPanel>
+            </StackPanel>
+            <Border Background="#FFAC3146"
+            CornerRadius="10,10,10,10"
+            Height="30" Width="130" HorizontalAlignment="Right">
+                <Button x:Name="StopNumeralButton" Content="Аделамс" 
                 Background="#FFAC3146" 
                 Padding="0 10 0 10" 
                 Foreground="White"
@@ -69,48 +107,7 @@
                 FontFamily="Actor" 
                 Height="48" 
                 VerticalAlignment="Center" HorizontalAlignment="Center" Width="112" Click="StopPadezhiButton_Click" />
-        </Border>
-        <StackPanel Height="300" VerticalAlignment="Center">
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Кафта + Колма сядт нильгемонь  фкя =" Height="30" Width="305" HorizontalContentAlignment="Right"/>
-                <TextBox x:Name="TextBox1" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Сисем * Ведьгемонь =" Height="30" Width="305" HorizontalContentAlignment="Right"/>
-                <TextBox x:Name="TextBox2" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Кемонь - Вете =" Height="30" Width="305" HorizontalContentAlignment="Right"/>
-                <TextBox x:Name="TextBox3" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Сяда / Вете" Height="30" Width="305" HorizontalContentAlignment="Right"/>
-                <TextBox x:Name="TextBox4" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Сизьгемонь кафта / Вейхса = " Height="30" Width="305" HorizontalContentAlignment="Right"/>
-                <TextBox x:Name="TextBox5" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Кафксагемонь ниле + Кота =" Height="30" Width="305" HorizontalContentAlignment="Right"/>
-                <TextBox x:Name="TextBox6" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Ниле сядт кодгемонь вете + Колмагемонь сисем" Height="30" Width="305" HorizontalContentAlignment="Right"/>
-                <TextBox x:Name="TextBox7" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Вейхсагемонь кафта + Сяда нильгемонь  фкя =" Height="30" Width="305" HorizontalContentAlignment="Right"/>
-                <TextBox x:Name="TextBox8" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Тёжень * Кафта =" Height="30" Width="305" HorizontalContentAlignment="Right"/>
-                <TextBox x:Name="TextBox9" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Тёжень / Кафта =" Height="30" Width="305" HorizontalContentAlignment="Right"/>
-                <TextBox x:Name="TextBox10" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
-            </StackPanel>
+            </Border>
         </StackPanel>
 
 

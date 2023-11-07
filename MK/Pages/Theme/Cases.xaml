@@ -55,40 +55,75 @@
             </StackPanel>
             <StackPanel Height="100" Width="100"/>
             <StackPanel Width="975">
-                <StackPanel Height="30" Orientation="Horizontal">
-                    <RadioButton x:Name="CasesKey1" Content="Морга" Width="185"/>
-                    <RadioButton x:Name="CasesKey2" Content="Мор" Width="185"/>
-                    <RadioButton x:Name="CasesKey3" Content="Морня" Width="185"/>
-                    <RadioButton x:Name="CasesKey4" Content="Морак" Width="185"/>
-                    <RadioButton x:Name="CasesKey5" Content="Морамс"/>
-                </StackPanel>
-                <StackPanel Height="30" Orientation="Horizontal">
-                    <RadioButton x:Name="CasesKey6" Content="Келуня" Width="185"/>
-                    <RadioButton x:Name="CasesKey7" Content="Келу" Width="185"/>
-                    <RadioButton x:Name="CasesKey8" Content="Келазь" Width="185"/>
-                    <RadioButton x:Name="CasesKey9" Content="Келунь" Width="185"/>
-                    <RadioButton x:Name="CasesKey10" Content="Келунят"/>
-                </StackPanel>
-                <StackPanel Height="30" Orientation="Horizontal">
-                    <RadioButton x:Name="CasesKey11" Content="Пиземс" Width="185"/>
-                    <RadioButton x:Name="CasesKey12" Content="Пизем" Width="185"/>
-                    <RadioButton x:Name="CasesKey13" Content="Пиза" Width="185"/>
-                    <RadioButton x:Name="CasesKey14" Content="Пизепт" Width="185"/>
-                    <RadioButton x:Name="CasesKey15" Content="Пизему"/>
-                </StackPanel>
-                <StackPanel Height="30" Orientation="Horizontal">
-                    <RadioButton x:Name="CasesKey16" Content="Шабра" Width="185" />
-                    <RadioButton x:Name="CasesKey17" Content="Шаба" Width="185"/>
-                    <RadioButton x:Name="CasesKey18" Content="Шабат" Width="185"/>
-                    <RadioButton x:Name="CasesKey19" Content="Шабань" Width="185"/>
-                    <RadioButton x:Name="CasesKey20" Content="Шабакс"/>
-                </StackPanel>
                 <StackPanel Height="20" Orientation="Horizontal">
-                    <RadioButton x:Name="CasesKey21" Content="Пинень" Width="185" />
-                    <RadioButton x:Name="CasesKey22" Content="Пине" Width="185"/>
-                    <RadioButton x:Name="CasesKey23" Content="Пинелефкс" Width="185"/>
-                    <RadioButton x:Name="CasesKey24" Content="Пинет" Width="185"/>
-                    <RadioButton x:Name="CasesKey25" Content="Пинем"/>
+                    <StackPanel.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFC5AEA4"/>
+                            <GradientStop Color="#FFE7D8CD" Offset="0.961"/>
+                        </LinearGradientBrush>
+                    </StackPanel.Background>
+                    <RadioButton x:Name="CasesKey1" Content="Морга" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey2" Content="Мор" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey3" Content="Морня" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey4" Content="Морак" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey5" Content="Морамс" FontSize="14"/>
+                </StackPanel>
+                <StackPanel Height="30"/>
+                <StackPanel Height="20" Orientation="Horizontal">
+                    <StackPanel.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFC5AEA4"/>
+                            <GradientStop Color="#FFE7D8CD" Offset="0.961"/>
+                        </LinearGradientBrush>
+                    </StackPanel.Background>
+                    <RadioButton x:Name="CasesKey6" Content="Келуня" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey7" Content="Келу" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey8" Content="Келазь" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey9" Content="Келунь" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey10" Content="Келунят" FontSize="14"/>
+                </StackPanel>
+                <StackPanel Height="30"/>
+                <StackPanel Height="20" Orientation="Horizontal">
+                    <StackPanel.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFC5AEA4"/>
+                            <GradientStop Color="#FFE7D8CD" Offset="0.961"/>
+                        </LinearGradientBrush>
+                    </StackPanel.Background>
+                    <RadioButton x:Name="CasesKey11" Content="Пиземс" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey12" Content="Пизем" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey13" Content="Пиза" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey14" Content="Пизепт" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey15" Content="Пизему" FontSize="14"/>
+                </StackPanel>
+                <StackPanel Height="30"/>
+                <StackPanel Height="20" Orientation="Horizontal">
+                    <StackPanel.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFC5AEA4"/>
+                            <GradientStop Color="#FFE7D8CD" Offset="0.961"/>
+                        </LinearGradientBrush>
+                    </StackPanel.Background>
+                    <RadioButton x:Name="CasesKey16" Content="Шабра" Width="185" FontSize="14" />
+                    <RadioButton x:Name="CasesKey17" Content="Шаба" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey18" Content="Шабат" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey19" Content="Шабань" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey20" Content="Шабакс" FontSize="14"/>
+                    <StackPanel Height="100" Width="100"/>
+                </StackPanel>
+                <StackPanel Height="30"/>
+                <StackPanel Height="20" Orientation="Horizontal">
+                    <StackPanel.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFC5AEA4"/>
+                            <GradientStop Color="#FFE7D8CD" Offset="0.961"/>
+                        </LinearGradientBrush>
+                    </StackPanel.Background>
+                    <RadioButton x:Name="CasesKey21" Content="Пинень" Width="185" FontSize="14" />
+                    <RadioButton x:Name="CasesKey22" Content="Пине" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey23" Content="Пинелефкс" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey24" Content="Пинет" Width="185" FontSize="14"/>
+                    <RadioButton x:Name="CasesKey25" Content="Пинем" FontSize="14"/>
                 </StackPanel>
             </StackPanel>
             <StackPanel Height="100"/>

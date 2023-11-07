@@ -51,5 +51,10 @@ namespace MK
         {
             NavigationService.Navigate(new Cases());
         }
+
+        private void ProposalThemesButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Proposal());
+        }
     }
 }

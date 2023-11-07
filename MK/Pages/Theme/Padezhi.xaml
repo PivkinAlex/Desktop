@@ -12,38 +12,12 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Resources/Images/background2.png"/>
         </Grid.Background>
-        <Border Background="#FFAC3146" CornerRadius="9,9,9,9" Margin="35,72,0,0" Height="48" VerticalAlignment="Top" HorizontalAlignment="Left">
-            <StackPanel Orientation="Horizontal">
-                <Image Source="/Resources/Images/!.png" Height="45" Width="45">
-                    <Image.OpacityMask>
-                        <ImageBrush ImageSource="/Resources/Images/!.png" Opacity="0.3"/>
-                    </Image.OpacityMask>
-                </Image>
-                <TextBlock TextWrapping="Wrap" Width="785"  
-                           Padding="10" Foreground="White" FontSize="18" VerticalAlignment="Center"><Run Language="ru-ru" Text="В данном задании вам будет необходимо просклонять заданное слово по падежам. Нужно вписать необходимые окончания в конце каждого падежа."/></TextBlock>
-            </StackPanel>
-        </Border>
-        <Button x:Name="HelpPadezhiButton"  HorizontalAlignment="Right" VerticalAlignment="Top" Height="68" Width="55" Margin="910,62,0,0" Click="HelpPadezhiButton_Click" >
-
-
-            <Button.Foreground>
-                <ImageBrush/>
-            </Button.Foreground>
-            <Button.BorderBrush>
-                <SolidColorBrush Color="#FF707070" Opacity="0"/>
-            </Button.BorderBrush>
-            <Button.Background>
-                <ImageBrush ImageSource="/Resources/Images/Help.png"/>
-            </Button.Background>
-        </Button>
-        <Border Background="#FFAC3146"
-            CornerRadius="10,10,10,10" 
-            Margin="35,19,0,0"
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="630" Width="885">
+            <Border Background="#FFAC3146"
+            CornerRadius="10,10,10,10"
             Height="30" 
-            VerticalAlignment="Top" 
-            HorizontalAlignment="Left" 
-            Width="130">
-            <Button x:Name="ExitPadezhiButton" Content="Лисемс" 
+            Width="130" HorizontalAlignment="Left">
+                <Button x:Name="ExitPadezhiButton" Content="Лисемс" 
                 Background="#FFAC3146" 
                 Padding="0 10 0 10" 
                 Foreground="White"
@@ -52,63 +26,87 @@
                 FontFamily="Actor" 
                 Height="48" 
                 VerticalAlignment="Center" HorizontalAlignment="Center" Width="112" Click="ExitPadezhiButton_Click" />
-        </Border>
-        <StackPanel x:Name="PadezhiTables" Orientation="Horizontal" Margin="0,150,0,0" VerticalAlignment="Top" HorizontalAlignment="Center">
-            <StackPanel x:Name="PadezhiColumn" Height="371" VerticalAlignment="Top">
-                <Label Content="Падежть лемоц" FontWeight="Bold" FontSize="14"/>
-                <Label Content="Именительнай" FontSize="14"/>
-                <Label Content="Родительнай" FontSize="14"/>
-                <Label Content="Дательнай" FontSize="14"/>
-                <Label Content="Отложительнай" FontSize="14"/>
-                <Label Content="Местнай" FontSize="14"/>
-                <Label Content="Исходнай" FontSize="14"/>
-                <Label Content="Направительно-вносительнай" FontSize="14"/>
-                <Label Content="Переместительнай" FontSize="14"/>
-                <Label Content="Сравнительнай" FontSize="14"/>
-                <Label Content="Изъяснительнай" FontSize="14"/>
-                <Label Content="Превратительнай" FontSize="14"/>
-                <Label Content="Причиннай" FontSize="14"/>
-            </StackPanel>
-            <StackPanel Height="371" VerticalAlignment="Top">
-                <Label Content="Валсь" FontWeight="Bold" FontSize="14"/>
-                <Label Content="Куд" HorizontalAlignment="Right" FontSize="14"/>
-                <Label Content="Куд" HorizontalAlignment="Right" FontSize="14"/>
-                <Label Content="Куд" HorizontalAlignment="Right" FontSize="14"/>
-                <Label Content="Куд" HorizontalAlignment="Right" FontSize="14"/>
-                <Label Content="Куд" HorizontalAlignment="Right" FontSize="14"/>
-                <Label Content="Куд" HorizontalAlignment="Right" FontSize="14"/>
-                <Label Content="Куд" HorizontalAlignment="Right" FontSize="14"/>
-                <Label Content="Куд" HorizontalAlignment="Right" FontSize="14"/>
-                <Label Content="Куд" HorizontalAlignment="Right" FontSize="14"/>
-                <Label Content="Куд" HorizontalAlignment="Right" FontSize="14"/>
-                <Label Content="Куд" HorizontalAlignment="Right" FontSize="14"/>
-                <Label Content="Куд" HorizontalAlignment="Right" FontSize="14"/>
-            </StackPanel>
-            <StackPanel Height="371" VerticalAlignment="Top">
-                <Label Content="Валбец" FontWeight="Bold" Height="30" FontSize="14" Width="61"/>
-                <TextBox x:Name="TextBox1" TextWrapping="Wrap"  Width="63" Margin="1,0,0,3"/>
-                <TextBox x:Name="TextBox2" TextWrapping="Wrap"  Width="63" Margin="1,7.5,0,3"/>
-                <TextBox x:Name="TextBox3" TextWrapping="Wrap"  Width="63" Margin="1,7.5,0,3"/>
-                <TextBox x:Name="TextBox4" TextWrapping="Wrap" Width="63" Margin="1,7.5,0,3"/>
-                <TextBox x:Name="TextBox5" TextWrapping="Wrap" Width="63" Margin="1,7.5,0,3"/>
-                <TextBox x:Name="TextBox6" TextWrapping="Wrap" Width="63" Margin="1,7.5,0,3"/>
-                <TextBox x:Name="TextBox7" TextWrapping="Wrap" Width="63" Margin="1,7.5,0,3"/>
-                <TextBox x:Name="TextBox8" TextWrapping="Wrap" Width="63" Margin="1,7.5,0,3"/>
-                <TextBox x:Name="TextBox9" TextWrapping="Wrap" Width="63" Margin="1,7.5,0,3"/>
-                <TextBox x:Name="TextBox10" TextWrapping="Wrap" Width="63" Margin="1,7.5,0,3"/>
-                <TextBox x:Name="TextBox11" TextWrapping="Wrap" Width="63" Margin="1,7.5,0,3"/>
-                <TextBox x:Name="TextBox12" TextWrapping="Wrap" Width="63" Margin="1,7.5,0,3"/>
+            </Border>
+            <StackPanel Orientation="Horizontal" Height="115">
+                <Border Background="#FFAC3146" CornerRadius="9,9,9,9" Height="48">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/Images/!.png" Height="45" Width="45">
+                            <Image.OpacityMask>
+                                <ImageBrush ImageSource="/Resources/Images/!.png" Opacity="0.3"/>
+                            </Image.OpacityMask>
+                        </Image>
+                        <TextBlock TextWrapping="Wrap" Width="785"  
+                            Padding="10" Foreground="White" FontSize="18" VerticalAlignment="Center"><Run Language="ru-ru" Text="В данном задании вам будет необходимо просклонять заданное слово по падежам. Нужно вписать необходимые окончания в конце каждого падежа."/></TextBlock>
+                    </StackPanel>
+                </Border>
+                <Button x:Name="HelpPadezhiButton" Height="68" Width="55" Click="HelpPadezhiButton_Click" >
 
+
+                    <Button.Foreground>
+                        <ImageBrush/>
+                    </Button.Foreground>
+                    <Button.BorderBrush>
+                        <SolidColorBrush Color="#FF707070" Opacity="0"/>
+                    </Button.BorderBrush>
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Resources/Images/Help.png"/>
+                    </Button.Background>
+                </Button>
             </StackPanel>
-        </StackPanel>
-        <Border Background="#FFAC3146"
-            CornerRadius="10,10,10,10" 
-            Margin="790,615,0,0"
+            <StackPanel x:Name="PadezhiTables" Orientation="Horizontal" Width="365" HorizontalAlignment="Center">
+                <StackPanel x:Name="PadezhiColumn" Height="409" VerticalAlignment="Top">
+                    <Label Content="Падежть лемоц" FontWeight="Bold" FontSize="16"/>
+                    <Label Content="Именительнай" FontSize="16"/>
+                    <Label Content="Родительнай" FontSize="16"/>
+                    <Label Content="Дательнай" FontSize="16"/>
+                    <Label Content="Отложительнай" FontSize="16"/>
+                    <Label Content="Местнай" FontSize="16"/>
+                    <Label Content="Исходнай" FontSize="16"/>
+                    <Label Content="Направительно-вносительнай" FontSize="16"/>
+                    <Label Content="Переместительнай" FontSize="16"/>
+                    <Label Content="Сравнительнай" FontSize="16"/>
+                    <Label Content="Изъяснительнай" FontSize="16"/>
+                    <Label Content="Превратительнай" FontSize="16"/>
+                    <Label Content="Причиннай" FontSize="16"/>
+                </StackPanel>
+                <StackPanel Height="402" VerticalAlignment="Top">
+                    <Label Content="Валсь" FontWeight="Bold" FontSize="14"/>
+                    <Label Content="Куд" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Куд" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Куд" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Куд" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Куд" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Куд" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Куд" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Куд" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Куд" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Куд" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Куд" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Куд" HorizontalAlignment="Right" FontSize="16"/>
+                </StackPanel>
+                <StackPanel Height="410" VerticalAlignment="Top">
+                    <Label Content="Валбец" FontWeight="Bold" Height="26" FontSize="14" Width="91"/>
+                    <TextBox x:Name="TextBox1" TextWrapping="Wrap"  Width="63" Margin="1,10,9,3"/>
+                    <TextBox x:Name="TextBox2" TextWrapping="Wrap"  Width="63" Margin="1,10,9,3"/>
+                    <TextBox x:Name="TextBox3" TextWrapping="Wrap"  Width="63" Margin="1,10,9,3"/>
+                    <TextBox x:Name="TextBox4" TextWrapping="Wrap" Width="63" Margin="1,10,9,3"/>
+                    <TextBox x:Name="TextBox5" TextWrapping="Wrap" Width="63" Margin="1,10,9,3"/>
+                    <TextBox x:Name="TextBox6" TextWrapping="Wrap" Width="63" Margin="1,10,9,3"/>
+                    <TextBox x:Name="TextBox7" TextWrapping="Wrap" Width="63" Margin="1,10,9,3"/>
+                    <TextBox x:Name="TextBox8" TextWrapping="Wrap" Width="63" Margin="1,10,9,3"/>
+                    <TextBox x:Name="TextBox9" TextWrapping="Wrap" Width="63" Margin="1,10,9,3"/>
+                    <TextBox x:Name="TextBox10" TextWrapping="Wrap" Width="63" Margin="1,10,9,3"/>
+                    <TextBox x:Name="TextBox11" TextWrapping="Wrap" Width="63" Margin="1,10,9,3"/>
+                    <TextBox x:Name="TextBox12" TextWrapping="Wrap" Width="63" Margin="1,10,9,3"/>
+
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Height="20"/>
+            <Border Background="#FFAC3146"
+            CornerRadius="10,10,10,10"
             Height="30" 
-            VerticalAlignment="Top" 
-            HorizontalAlignment="Left" 
-            Width="130">
-            <Button x:Name="StopPadezhiButton" Content="Аделамс" 
+            Width="130" HorizontalAlignment="Right">
+                <Button x:Name="StopPadezhiButton" Content="Аделамс" 
                 Background="#FFAC3146" 
                 Padding="0 10 0 10" 
                 Foreground="White"
@@ -117,7 +115,8 @@
                 FontFamily="Actor" 
                 Height="48" 
                 VerticalAlignment="Center" HorizontalAlignment="Center" Width="112" Click="StopPadezhiButton_Click" />
-        </Border>
+            </Border>
+        </StackPanel>
 
     </Grid>
 </Page>

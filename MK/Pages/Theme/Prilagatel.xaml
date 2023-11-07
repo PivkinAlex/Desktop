@@ -57,38 +57,38 @@
             <StackPanel Height="52"/>
             <StackPanel x:Name="PrilagatelTable" Orientation="Horizontal" HorizontalAlignment="Center">
                 <StackPanel Height="338" VerticalAlignment="Top">
-                    <Label Content="Существительное " FontWeight="Bold" FontSize="14"/>
-                    <Label Content="Куд" HorizontalAlignment="Right" FontSize="14"/>
-                    <Label Content="Вирь" HorizontalAlignment="Right" FontSize="14"/>
-                    <Label Content="Ляй" HorizontalAlignment="Right" FontSize="14"/>
-                    <Label Content="Шаба" HorizontalAlignment="Right" FontSize="14"/>
-                    <Label Content="Ката" HorizontalAlignment="Right" FontSize="14"/>
-                    <Label Content="Тише" HorizontalAlignment="Right" FontSize="14"/>
-                    <Label Content="Тракс" HorizontalAlignment="Right" FontSize="14"/>
-                    <Label Content="Пиче" HorizontalAlignment="Right" FontSize="14"/>
+                    <Label Content="Существительное " FontWeight="Bold" FontSize="16"/>
+                    <Label Content="Куд" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Вирь" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Ляй" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Шаба" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Ката" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Тише" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Тракс" HorizontalAlignment="Right" FontSize="16"/>
+                    <Label Content="Пиче" HorizontalAlignment="Right" FontSize="16"/>
                 </StackPanel>
                 <StackPanel Height="333" VerticalAlignment="Top">
-                    <Label Content="Прилагательное" FontWeight="Bold" FontSize="14"/>
-                    <TextBox x:Name="TextBox1" TextWrapping="Wrap"  Width="63" Margin="1,4,0,4"/>
-                    <TextBox x:Name="TextBox2" TextWrapping="Wrap"  Width="63" Margin="1,4,0,4"/>
-                    <TextBox x:Name="TextBox3" TextWrapping="Wrap"  Width="63" Margin="1,4,0,4"/>
-                    <TextBox x:Name="TextBox4" TextWrapping="Wrap" Width="63" Margin="1,4,0,4"/>
-                    <TextBox x:Name="TextBox5" TextWrapping="Wrap" Width="63" Margin="1,4,0,4"/>
-                    <TextBox x:Name="TextBox6" TextWrapping="Wrap" Width="63" Margin="1,4,0,4"/>
-                    <TextBox x:Name="TextBox7" TextWrapping="Wrap" Width="63" Margin="1,4,0,4"/>
-                    <TextBox x:Name="TextBox8" TextWrapping="Wrap" Width="63" Margin="1,4,0,4"/>
+                    <Label Content="Прилагательное" FontWeight="Bold" FontSize="16"/>
+                    <TextBox x:Name="TextBox1" TextWrapping="Wrap"  Width="63" Margin="1,9,0,4"/>
+                    <TextBox x:Name="TextBox2" TextWrapping="Wrap"  Width="63" Margin="1,9,0,4"/>
+                    <TextBox x:Name="TextBox3" TextWrapping="Wrap"  Width="63" Margin="1,9,0,4"/>
+                    <TextBox x:Name="TextBox4" TextWrapping="Wrap" Width="63" Margin="1,9,0,4"/>
+                    <TextBox x:Name="TextBox5" TextWrapping="Wrap" Width="63" Margin="1,9,0,4"/>
+                    <TextBox x:Name="TextBox6" TextWrapping="Wrap" Width="63" Margin="1,9,0,4"/>
+                    <TextBox x:Name="TextBox7" TextWrapping="Wrap" Width="63" Margin="1,9,0,4"/>
+                    <TextBox x:Name="TextBox8" TextWrapping="Wrap" Width="63" Margin="1,9,0,4"/>
 
                 </StackPanel>
                 <StackPanel Height="338">
-                    <Label Content="Перевод" FontWeight="Bold" FontSize="14"/>
-                    <Label Content="Домашний" HorizontalAlignment="Left" FontSize="14"/>
-                    <Label Content="Лесной" HorizontalAlignment="Left" FontSize="14"/>
-                    <Label Content="Речной" HorizontalAlignment="Left" FontSize="14"/>
-                    <Label Content="Детский" HorizontalAlignment="Left" FontSize="14"/>
-                    <Label Content="Кошачий" HorizontalAlignment="Left" FontSize="14"/>
-                    <Label Content="Травный" HorizontalAlignment="Left" FontSize="14"/>
-                    <Label Content="Коровий" HorizontalAlignment="Left" FontSize="14"/>
-                    <Label Content="Сосновый" HorizontalAlignment="Left" FontSize="14"/>
+                    <Label Content="Перевод" FontWeight="Bold" FontSize="16"/>
+                    <Label Content="Домашний" HorizontalAlignment="Left" FontSize="16"/>
+                    <Label Content="Лесной" HorizontalAlignment="Left" FontSize="16"/>
+                    <Label Content="Речной" HorizontalAlignment="Left" FontSize="16"/>
+                    <Label Content="Детский" HorizontalAlignment="Left" FontSize="16"/>
+                    <Label Content="Кошачий" HorizontalAlignment="Left" FontSize="16"/>
+                    <Label Content="Травный" HorizontalAlignment="Left" FontSize="16"/>
+                    <Label Content="Коровий" HorizontalAlignment="Left" FontSize="16"/>
+                    <Label Content="Сосновый" HorizontalAlignment="Left" FontSize="16"/>
                 </StackPanel>
             </StackPanel>
             <Border Background="#FFAC3146"

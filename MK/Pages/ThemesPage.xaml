@@ -34,7 +34,6 @@
                         VerticalAlignment="Center" 
                         Click="Button_Click"  />
             </Border>
-            <Image HorizontalAlignment="Left" Height="188" Margin="586,0,0,0" VerticalAlignment="Center" Width="139" Source="/Resources/Images/Predlognie.png"/>
             <Image HorizontalAlignment="Left" Height="188" Margin="785,0,0,0" VerticalAlignment="Center" Width="139" Source="/Resources/Images/Time.png"/>
             <Image HorizontalAlignment="Left" Height="189" Margin="694,461,0,0" VerticalAlignment="Top" Width="139" Source="/Resources/Images/Glagol.png"/>
             <Button x:Name="PadezhiThemesButton" HorizontalAlignment="Left" Margin="460,40,0,0" VerticalAlignment="Top" Height="180" Width="135" Click="PadezhiTheme_Click">
@@ -68,6 +67,14 @@
                 <Button.Background>
                     <ImageBrush ImageSource="/Resources/Images/Koren.png"/>
                 </Button.Background>
+            </Button>
+            <Button x:Name="ProposalThemesButton" HorizontalAlignment="Left" Margin="586,0,0,0" VerticalAlignment="Center" Click="ProposalThemesButton_Click" Height="186" Width="139">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/Images/Predlognie.png"/>
+                </Button.Background>
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
             </Button>
 
         </Grid>
