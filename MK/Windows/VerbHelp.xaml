@@ -1,0 +1,13 @@
+﻿<Window x:Class="MK.Windows.VerbHelp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MK.Windows"
+        mc:Ignorable="d"
+        Title="Лездкс" Height="330" Width="705">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Height="294" Width="695" TextWrapping="Wrap" TextAlignment="Center" FontSize="16"><Run FontStyle="Italic" Text="Сложное будущее время образуется при помощи вспомогательного глагола-связки кармамс «стать» или ушедомс «начать» (изменяемая часть) + инфинитив, оканчивающийся на -ма (неизменяемая часть). "/><LineBreak/><Run FontStyle="Italic" FontWeight="Bold" Text="Например: "/><Run FontStyle="Italic" Text="«Я буду петь» в мокшанском языке будет выражаться так: "/><LineBreak/><Run FontStyle="Italic" Text="Мон карма-н морама. Используется глагол-связка кармамс (изменяемая часть + инфинитиф на -ма неизменяемая часть). "/><LineBreak/><Run FontStyle="Italic" Text="Проспрягаем глагол морамс «петь» в сложном будущем времени: "/><LineBreak/><Run FontStyle="Italic" FontWeight="Bold" Text="Единственное число"/><Run FontStyle="Italic" Text=" (мон) карма-н морама «я буду «петь»"/><LineBreak/><Run FontStyle="Italic" Text=" (тон) карма-т морама «ты будешь «петь» "/><LineBreak/><Run FontStyle="Italic" Text="(сон) карма-й морама «он будет петь, она будет «петь» "/><LineBreak/><Run FontStyle="Italic" FontWeight="Bold" Text="Множественное число"/><Run FontStyle="Italic" Text=" (минь) карма-тама морама «мы будем петь» "/><LineBreak/><Run FontStyle="Italic" Text="(тинь) карма-тада морама «вы будете «петь» "/><LineBreak/><Run FontStyle="Italic" Text="(синь) карма-йхть морама «они будут «петь»"/></TextBlock>
+
+    </Grid>
+</Window>

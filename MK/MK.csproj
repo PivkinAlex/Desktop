@@ -77,6 +77,9 @@
     <Compile Include="Pages\Theme\Proposal.xaml.cs">
       <DependentUpon>Proposal.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Theme\Verb.xaml.cs">
+      <DependentUpon>Verb.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Repository\Repository.cs" />
     <Compile Include="Windows\CasesHelp.xaml.cs">
       <DependentUpon>CasesHelp.xaml</DependentUpon>
@@ -92,6 +95,9 @@
     </Compile>
     <Compile Include="Windows\Result.xaml.cs">
       <DependentUpon>Result.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\VerbHelp.xaml.cs">
+      <DependentUpon>VerbHelp.xaml</DependentUpon>
     </Compile>
     <Page Include="Pages\LogIn.xaml">
       <SubType>Designer</SubType>
@@ -144,6 +150,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Theme\Verb.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\CasesHelp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -161,6 +171,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\Result.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\VerbHelp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -215,6 +229,16 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Images\CasesHelpImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Verb3.jpg" />
+    <Resource Include="Resources\Images\Verb4.jpg" />
+    <Resource Include="Resources\Images\Verb5.jpg" />
+    <Resource Include="Resources\Images\Verb6.jpg" />
+    <Resource Include="Resources\Images\Verb7.jpg" />
+    <Resource Include="Resources\Images\Verb8.jpg" />
+    <Resource Include="Resources\Images\Verb1.jpg" />
+    <Resource Include="Resources\Images\Verb2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -76,6 +76,7 @@
                     <ImageBrush/>
                 </Button.BorderBrush>
             </Button>
+            <Button x:Name="VerblThemesButton" HorizontalAlignment="Left" Margin="165,280,0,0" VerticalAlignment="Top" Height="60" Width="60" Click="VerblThemesButton_Click"/>
 
         </Grid>
     </ScrollViewer>

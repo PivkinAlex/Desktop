@@ -56,5 +56,10 @@ namespace MK
         {
             NavigationService.Navigate(new Proposal());
         }
+
+        private void VerblThemesButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Verb());
+        }
     }
 }
