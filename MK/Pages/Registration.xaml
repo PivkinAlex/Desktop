@@ -10,7 +10,6 @@
 
     <ScrollViewer>
         <Grid>
-
             <Grid.Background>
                 <ImageBrush ImageSource="/Resources/Images/background.png"/>
             </Grid.Background>
@@ -26,7 +25,7 @@
                     <Label Content="Лемце" 
                        FontFamily="Actor" 
                        FontSize="20" />
-                    <TextBox x:Name="Name" 
+                    <TextBox x:Name="UsernameTextBox" 
                          FontFamily="Actor" 
                          FontSize="16"
                          Width="461" 
@@ -36,8 +35,7 @@
                          BorderBrush="#FF060606" 
                          HorizontalAlignment="Left"
                          BorderThickness="0,0,0,2" 
-                         TextWrapping="Wrap" 
-                         Text="Введите имя" >
+                         TextWrapping="Wrap" >
                         <TextBox.Background>
                             <SolidColorBrush Color="White" 
                                          Opacity="0"/>
@@ -51,7 +49,7 @@
                     <Label Content="Почтаце" 
                        FontFamily="Actor" 
                        FontSize="20"/>
-                    <TextBox x:Name="Email" 
+                    <TextBox x:Name="EmailTextBox" 
                          FontFamily="Actor" 
                          FontSize="16"
                          Width="461" 
@@ -60,8 +58,7 @@
                          VerticalAlignment="Bottom" 
                          BorderBrush="Black" 
                          HorizontalAlignment="Left" 
-                         BorderThickness="0,0,0,2" 
-                         Text="Введите почту" >
+                         BorderThickness="0,0,0,2" >
                         <TextBox.Background>
                             <SolidColorBrush Color="White" 
                                          Opacity="0"/>

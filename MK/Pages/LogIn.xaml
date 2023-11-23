@@ -85,7 +85,7 @@
                 <StackPanel Height="22" Width="465"/>
                 <Border Background="#FFAC3146" 
                     CornerRadius="2,2,12,12" VerticalAlignment="Center" HorizontalAlignment="Center" Width="460">
-                    <Button Content="Войти" 
+                    <Button x:Name="LogInRegistrationButton" Content="Тиемс регистрация" 
                         Background="#FFAC3146"
                         Padding="0 10 0 10" 
                         Foreground="White" 

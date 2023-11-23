@@ -1,4 +1,5 @@
-﻿using MK.Windows;
+﻿using MK.Rep;
+using MK.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,7 @@ namespace MK.Pages.Theme
     /// </summary>
     public partial class Numeral : Page
     {
+        Repository _repository;
         public Numeral()
         {
             InitializeComponent();
@@ -34,7 +36,7 @@ namespace MK.Pages.Theme
 
         private void ExitNumeralButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new ThemesPage()); 
+            NavigationService.Navigate(new ThemesPage(_repository)); 
         }
 
         private void StopPadezhiButton_Click(object sender, RoutedEventArgs e)

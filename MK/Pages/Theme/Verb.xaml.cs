@@ -1,4 +1,5 @@
-﻿using MK.Windows;
+﻿using MK.Rep;
+using MK.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,7 @@ namespace MK.Pages.Theme
     /// </summary>
     public partial class Verb : Page
     {
+        Repository _repository;
         public Verb()
         {
             InitializeComponent();
@@ -29,7 +31,7 @@ namespace MK.Pages.Theme
       
         private void ExitVerbButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new ThemesPage());
+            NavigationService.Navigate(new ThemesPage(_repository));
         }
 
         private void HelpVerbButton_Click(object sender, RoutedEventArgs e)

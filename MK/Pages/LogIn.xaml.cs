@@ -1,6 +1,9 @@
-﻿using System;
+﻿using MK.Model;
+using MK.Rep;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,22 +23,38 @@ namespace MK
     /// </summary>
     public partial class LogIn : Page
     {
-        public LogIn()
+        Repository _repository;
+        public LogIn(Repository repository)
         {
             InitializeComponent();
+            _repository = repository;
             Password.PasswordChar= '\0';
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Registration());
+            var login = new UserForLogin
+            {
+                Username =  Login.Text,
+                Password = Password.Password
+            };
+            HttpResponseMessage response = await _repository.PostAuthenticationLogin(login);
+            if (response.IsSuccessStatusCode)
+            {
+                MessageBox.Show(response.StatusCode.ToString());
+                NavigationService.Navigate(new ThemesPage(_repository));
+            }
+            else
+            {
+                MessageBox.Show(response.StatusCode.ToString());
+            }
         }
 
 
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Registration());
+            NavigationService.Navigate(new Registration(_repository));
         }
 
         

@@ -16,6 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Controls.Primitives;
+using MK.Rep;
 
 namespace MK.Pages.Themes
 {
@@ -24,6 +25,7 @@ namespace MK.Pages.Themes
     /// </summary>
     public partial class Padezhi : Page
     {
+        Repository _repository;
         public Padezhi()
         {
             InitializeComponent();
@@ -39,7 +41,7 @@ namespace MK.Pages.Themes
 
         private void ExitPadezhiButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new ThemesPage());
+            NavigationService.Navigate(new ThemesPage(_repository));
         }
 
         private void StopPadezhiButton_Click(object sender, RoutedEventArgs e)

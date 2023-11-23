@@ -20,7 +20,7 @@
                     Width="460" 
                     Height="48" 
                     >
-                    <Button Content="Сувамс"
+                    <Button x:Name="MainStartButton" Content="Сувамс"
                         Background="#FFAC3146" 
                         Padding="0 10 0 10" 
                         Foreground="White" 
@@ -39,7 +39,7 @@
                     Width="460" 
                     Height="48" 
                     >
-                    <Button Content="Войти" 
+                    <Button x:Name="MainExitButton" Content="Лисемс" 
                         Background="#FFAC3146"
                         Padding="0 10 0 10" 
                         Foreground="White"

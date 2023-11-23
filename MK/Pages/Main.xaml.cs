@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MK.Rep;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,7 @@ namespace MK
     /// </summary>
     public partial class Main : Page
     {
+        Repository repository = new Repository();
         public Main()
         {
             InitializeComponent();
@@ -27,7 +29,7 @@ namespace MK
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new LogIn());
+            NavigationService.Navigate(new LogIn(repository));
         }
     }
 }

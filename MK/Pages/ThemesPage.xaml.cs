@@ -1,5 +1,6 @@
 ﻿using MK.Pages.Theme;
 using MK.Pages.Themes;
+using MK.Rep;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,14 +23,16 @@ namespace MK
     /// </summary>
     public partial class ThemesPage : Page
     {
-        public ThemesPage()
+        Repository _repository;
+        public ThemesPage(Repository repository)
         {
             InitializeComponent();
+            _repository = repository;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new LogIn());
+            //NavigationService.Navigate(new LogIn());
         }
 
         private void PadezhiTheme_Click(object sender, RoutedEventArgs e)

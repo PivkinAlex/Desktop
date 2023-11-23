@@ -1,4 +1,5 @@
 ﻿using MK.Pages.Themes;
+using MK.Rep;
 using MK.Windows;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,7 @@ namespace MK.Pages.Theme
     /// </summary>
     public partial class Proposal : Page
     {
+        Repository _repository;
         public Proposal()
         {
             InitializeComponent();
@@ -83,7 +85,7 @@ namespace MK.Pages.Theme
 
         private void ExitProposalButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService?.Navigate(new ThemesPage());
+            NavigationService?.Navigate(new ThemesPage(_repository));
         }
     }
 }

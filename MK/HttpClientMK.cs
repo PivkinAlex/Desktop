@@ -12,7 +12,7 @@ namespace MK
         private readonly Uri _baseUri;
         protected HttpClientMK() 
         {
-            _baseUri = new Uri("http://");
+            _baseUri = new Uri("http://79.174.94.77:8080");
         }
         protected HttpClient GetHttpClient() 
         {
